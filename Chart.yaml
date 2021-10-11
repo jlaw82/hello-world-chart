@@ -1,0 +1,23 @@
+apiVersion: v2
+name: hello-world
+version: 1.0.0
+type: application
+description: A Helm chart for hello-world app
+sources:
+  - A list of URLs to source code for this project (optional)
+dependencies: # A list of the chart requirements (optional)
+  - name: mysql
+    version: 8.8.8
+    repository: https://charts.bitnami.com/bitnami
+    alias: maindb
+  - name: backend-app
+    version: 1.0.0
+    alias: mainbe
+maintainers: # (optional)
+  - name: Jackson Law
+    email: jlaw82@gmail.com
+    url: A URL for the maintainer (optional for each maintainer)
+appVersion: 1.0.0
+deprecated: false
+annotations:
+  category: Backend

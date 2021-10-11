@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: app-settings
+data:
+  NODE_ENV: {{ .Values.env.NODE_ENV }}
+  APP_HOST: {{ .Values.env.APP_HOST }}
+  APP_PORT: {{ .Values.env.APP_PORT | quote }}
+  DB_USER: {{ .Values.env.DB_USER }}
+  DB_PASS: {{ .Values.env.DB_PASS }}
+  DB_PORT: {{ .Values.env.DB_PORT | quote }}
+  DB_DATABASE: {{ .Values.env.DB_DATABASE }}
+  DB_HOST: {{ .Values.env.DB_HOST }}

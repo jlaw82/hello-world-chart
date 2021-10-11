@@ -1,0 +1,23 @@
+#https://codersociety.com/blog/articles/helm-best-practices
+#https://github.com/jkroepke/helm-secrets
+global:
+  enabled: false
+mainbe:
+  enabled: true
+  env:
+    NODE_ENV: development
+    APP_HOST: 0.0.0.0
+    APP_PORT: 8081
+    DB_USER: sa
+    DB_PASS: pass
+    DB_HOST: test-dev-maindb
+    DB_PORT: 3306
+    DB_DATABASE: testdb
+maindb:
+  enabled: true
+  auth:
+    rootPassword: rootpass
+    database: testdb
+    username: sa
+    password: pass
+  initdbScriptsConfigMap: sqlinit-cm

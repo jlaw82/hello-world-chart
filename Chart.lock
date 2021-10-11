@@ -1,0 +1,9 @@
+dependencies:
+- name: mysql
+  repository: https://charts.bitnami.com/bitnami
+  version: 8.8.8
+- name: backend-app
+  repository: ""
+  version: 1.0.0
+digest: sha256:f48670a3207d2d57a6fccbf73e325ecd19f5a9aa9ac67b40afb7eb93c01059e0
+generated: "2021-10-11T20:36:15.6905734+08:00"

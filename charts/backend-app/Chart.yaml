@@ -1,0 +1,13 @@
+apiVersion: v2
+name: backend-app
+version: 1.0.0
+type: application
+description: NodeJS Backend
+maintainers: # (optional)
+  - name: Jackson Law
+    email: jlaw82@gmail.com
+    url: A URL for the maintainer (optional for each maintainer)
+appVersion: 1.0.0
+deprecated: false
+annotations:
+  category: Backend

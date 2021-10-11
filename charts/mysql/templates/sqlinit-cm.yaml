@@ -1,0 +1,11 @@
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: sqlinit-cm
+data:
+  initdb.sql: |
+    CREATE DATABASE IF NOT EXISTS testdb;
+    USE testdb;
+    CREATE TABLE test_table (col1 VARCHAR(100));
+    INSERT INTO test_table (col1) VALUES ("Hello World!");
